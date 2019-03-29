@@ -2,7 +2,7 @@
 <html xmlns:th="https://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>Khmer Academy API UI</title>
+  <title>Rural Development Bank</title>
   <link rel="icon" type="image/png" href="/resources/swagger/dist/images/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="/resources/swagger/dist/images/favicon-16x16.png" sizes="16x16" />
   <link th:href='@{/resources/swagger/dist/css/typography.css}' media='screen' rel='stylesheet' type='text/css'/>
@@ -76,10 +76,10 @@
       function addApiKeyAuthorization(){
         var key = encodeURIComponent($('#input_apiKey')[0].value);
         if(key && key.trim() != "") {
-           /*  var apiKeyAuth = new SwaggerClient.ApiKeyAuthorization("api_key", key, "query");
-            window.swaggerUi.api.clientAuthorizations.add("api_key", apiKeyAuth); */
-            var apiKeyAuth = new SwaggerClient.ApiKeyAuthorization("Authorization", "Basic ${kaapi}", "header");
-            window.swaggerUi.api.clientAuthorizations.add("Authorization", apiKeyAuth);
+            var apiKeyAuth = new SwaggerClient.ApiKeyAuthorization("api_key", key, "query");
+            window.swaggerUi.api.clientAuthorizations.add("api_key", apiKeyAuth);
+           /* var apiKeyAuth = new SwaggerClient.ApiKeyAuthorization("Authorization", "Basic ${kaapi}", "header");
+            window.swaggerUi.api.clientAuthorizations.add("Authorization", apiKeyAuth);*/
             log("added key " + key);
         }
       }

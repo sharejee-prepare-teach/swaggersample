@@ -46,7 +46,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http
 				.authorizeRequests()
-				.antMatchers("/hello/**","/registration/**")
+				.antMatchers("/hello/**","/registration/**","/v2/api/**")
 				.permitAll()
 				.anyRequest().authenticated()
 				.and()
@@ -59,10 +59,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.accessDeniedPage("/access-denied")
 				.and()
 				.logout().permitAll()
-				.and()
-				.httpBasic()
-				.and()
-				.csrf().disable();
+				.and().httpBasic()
+				.and().csrf().disable();
 	}
 	
 	@Override

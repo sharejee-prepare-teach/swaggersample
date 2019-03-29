@@ -21,14 +21,14 @@ import java.util.List;
  * Create Date on: 3/29/2019.
  */
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/v2/api/testmodels")
 public class TestModelRestController {
     @Autowired
     private TestModelService testModelService;
 
     private HttpStatus httpStatus = HttpStatus.OK;
 
-    @GetMapping(value="" , headers = "Accept=application/json")
+    @RequestMapping(value="" , headers = "Accept=application/json")
     @ApiOperation(value="View list of testModel")
     @ApiResponses(value={
             @ApiResponse(code=200,message="Successfully retrieved list"),
