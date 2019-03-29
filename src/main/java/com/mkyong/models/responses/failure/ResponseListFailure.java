@@ -6,10 +6,8 @@ import com.mkyong.models.responses.ResponseList;
 import java.util.Collections;
 
 /**
- * 
- * @author Tola
- *	Created Date: 2017/07/03
- *
+ * Create By: Ron Rith
+ * Create Date on: 3/29/2019.
  */
 public  class ResponseListFailure<T> extends ResponseList<T> {
 	private Error error;

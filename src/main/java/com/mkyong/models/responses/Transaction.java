@@ -1,5 +1,8 @@
 package com.mkyong.models.responses;
-
+/**
+ * Create By: Ron Rith
+ * Create Date on: 3/29/2019.
+ */
 public class Transaction {
 	public static class Success {
 		public static final String CREATED = "created";

@@ -6,7 +6,10 @@ import com.mkyong.exceptions.CustomGenericException;
 
 import java.io.Serializable;
 
-
+/**
+ * Create By: Ron Rith
+ * Create Date on: 3/29/2019.
+ */
 public class Pagination implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
