@@ -2,7 +2,10 @@ package com.mkyong.exceptions;
 
 import org.springframework.validation.Errors;
 
-@SuppressWarnings("serial")
+/**
+ * Create By: Ron Rith
+ * Create Date on: 3/29/2019.
+ */
 public class InvalidRequestException extends RuntimeException {
 	
 	private Errors errors;

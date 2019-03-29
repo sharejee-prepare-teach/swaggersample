@@ -3,7 +3,10 @@ package com.mkyong.exceptions;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
-
+/**
+ * Create By: Ron Rith
+ * Create Date on: 3/29/2019.
+ */
 public class ErrorResource {
 	
 	@JsonProperty("CODE")

@@ -15,9 +15,8 @@ import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import java.util.Locale;
 
 /**
- * 
- * @author Tola
- *	Created Date: 2017/06/27
+ * Create By: Ron Rith
+ * Create Date on: 3/29/2019.
  */
 @Configuration
 //@EnableWebMvc

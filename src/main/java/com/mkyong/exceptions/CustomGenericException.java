@@ -1,12 +1,11 @@
 package com.mkyong.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
+/**
+ * Create By: Ron Rith
+ * Create Date on: 3/29/2019.
+ */
 public class CustomGenericException extends RuntimeException {
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 2223401815627927627L;
 
 	@JsonProperty("CODE")
