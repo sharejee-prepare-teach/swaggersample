@@ -1,7 +1,6 @@
 package com.mkyong.models.responses;
 
 public class Transaction {
-
 	public static class Success {
 		public static final String CREATED = "created";
 		public static final String RETRIEVE = "retrieved";
