@@ -1,4 +1,4 @@
-package com.mkyong.repositories;
+package com.mkyong.repositories.testmodel;
 
 import com.mkyong.models.TestModel;
 import org.springframework.data.repository.PagingAndSortingRepository;

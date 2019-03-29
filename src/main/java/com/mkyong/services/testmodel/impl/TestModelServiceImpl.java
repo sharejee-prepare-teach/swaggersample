@@ -1,8 +1,8 @@
-package com.mkyong.services.impl;
+package com.mkyong.services.testmodel.impl;
 
 import com.mkyong.models.TestModel;
-import com.mkyong.repositories.TestModelRepository;
-import com.mkyong.services.TestModelService;
+import com.mkyong.repositories.testmodel.TestModelRepository;
+import com.mkyong.services.testmodel.TestModelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

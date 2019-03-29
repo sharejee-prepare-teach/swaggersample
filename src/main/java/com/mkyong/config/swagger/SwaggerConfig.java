@@ -1,4 +1,4 @@
-package com.mkyong.config;
+package com.mkyong.config.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

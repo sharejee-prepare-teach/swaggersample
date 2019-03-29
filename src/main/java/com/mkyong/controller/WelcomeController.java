@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Arrays;
@@ -18,7 +19,7 @@ public class WelcomeController {
 
     private List<String> tasks = Arrays.asList("a", "b", "c", "d", "e", "f", "g");
 
-    @GetMapping("/")
+    @RequestMapping(value = {"/welcome"})
     public String main(Model model) {
         model.addAttribute("message", message);
         model.addAttribute("tasks", tasks);
@@ -27,7 +28,7 @@ public class WelcomeController {
     }
 
     // /hello?name=kotlin
-    @GetMapping("/hello")
+    @RequestMapping(value = "/hello")
     public String mainWithParam(
             @RequestParam(name = "name", required = false, defaultValue = "") String name, Model model) {
 

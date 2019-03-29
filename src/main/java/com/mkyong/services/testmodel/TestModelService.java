@@ -1,4 +1,4 @@
-package com.mkyong.services;
+package com.mkyong.services.testmodel;
 
 import com.mkyong.models.TestModel;
 

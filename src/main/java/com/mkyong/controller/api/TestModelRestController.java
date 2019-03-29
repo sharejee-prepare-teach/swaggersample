@@ -3,7 +3,7 @@ package com.mkyong.controller.api;
 import com.mkyong.models.TestModel;
 import com.mkyong.models.responses.*;
 import com.mkyong.models.responses.failure.ResponseListFailure;
-import com.mkyong.services.TestModelService;
+import com.mkyong.services.testmodel.TestModelService;
 import com.wordnik.swagger.annotations.ApiOperation;
 import com.wordnik.swagger.annotations.ApiResponse;
 import com.wordnik.swagger.annotations.ApiResponses;
@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
